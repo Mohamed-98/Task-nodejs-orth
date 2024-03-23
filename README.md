@@ -4,6 +4,7 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
+![view](https://komarev.com/ghpvc/?username=Task-nodejs-orth&color=green&label=view)
 
 </div>
 
