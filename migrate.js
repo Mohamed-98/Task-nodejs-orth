@@ -12,15 +12,14 @@ const runMigrations = async () => {
         console.log("All database migrations completed successfully.");
     } catch (error) {
         console.error('Failed to complete migrations:', error);
-        throw error; // Re-throw the error to be caught in the catch block below if this script is run directly.
+        throw error; 
     }
 };
 
-// This part checks if the script is being run directly and, if so, executes the migrations.
 if (require.main === module) {
     runMigrations().catch(error => {
         console.error("Migration script encountered an error:", error);
-        process.exit(1); // Exit the process with an error code
+        process.exit(1); 
     });
 }
 
