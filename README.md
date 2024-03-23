@@ -16,6 +16,7 @@
 - [About](#about)
 - [Features](#Features)
 - [Getting Started](#getting_started)
+- [Running Migrations](#migrations)
 - [Running the tests](#tests)
 - [API Endpoints](#API_Endpoints)
 - [Built Using](#built_using)
@@ -58,6 +59,18 @@ cd Task-nodejs-orth
 npm install
 ```
 4. Set up your `.env` file with the necessary environment variables:
+
+## 🚀 Running Migrations <a name = "migrations"></a>
+Before starting the server, it's crucial to prepare your database by running migrations. These migrations set up the necessary tables and schemas in your SQL database, ensuring the application can operate correctly.
+
+## Manual Migration
+To run migrations manually, follow these steps:
+1. Ensure you have set up your `.env` file with your database credentials as outlined in the Installing section.
+2. Run the migration script from the root of your project directory:
+```
+npm run migrate
+```
+This command executes the migration scripts defined in migrate.js, creating or updating tables in your database as necessary. You should see a message indicating successful completion of migrations
 
 ## ❗❗ Edit the .env file with your database credentials and JWT secret
 
